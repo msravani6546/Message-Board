@@ -1,2 +1,4 @@
 # Message-Board
-A Message Board using PHP and MySQL
+A Message Board using PHP and MySQL.It has login page, and Messageboard page.
+From the login script, if the user enters a wrong username/password and pushes "Login", it goes to the login script again. If the user enters a correct username/password and pushes "Login", it goes to the board script. From the board script, if the user pushes "Logout", it logs out and go to the login script. From the board script, if the user fills out the textarea and pushes the "New Post" button, it will insert the new message in the database (with null replyto attribute) and will go to the board script again. If the user fills out the textarea and pushes the "Reply" button, it will insert the message in the database -- but this time  the replyto value is to be set, and will go to the board script again.
+The board script prints all the messages in the database as a flat list ordered by date/time (newest first, oldest last)
